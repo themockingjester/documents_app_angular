@@ -1,0 +1,40 @@
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        background-color: #FFFBF5;
+        max-width: fit-content;
+        border-radius: 5px;
+        border: 2px solid #00425A;
+        /* 5px rounded corners */
+    }
+</style>
+<div>
+    <div class="card" style=" margin-top: 2rem;margin-bottom: 2rem;margin-left: auto;margin-right: auto;">
+        <div class="card-body">
+            <!-- <img src={{product.images[0]}}> -->
+            <h5>Add Item</h5>
+            <input type="text" id="productName" name="productName">
+            <label for="productName">&nbsp;Product Name</label><br><br>
+
+            <input type="text" id="productSku" name="productSku">
+            <label for="productSku">&nbsp;SKU Number</label><br><br>
+            <input type="number" id="productPrice" name="productPrice">
+            <label for="productPrice">&nbsp;Product Price</label><br><br>
+            <input type="text" id="productDesc" name="productDesc">
+            <label for="productDesc">&nbsp;Description</label><br><br>
+            <br>
+            <button class='btn btn-warning' (click)="addImageComponent()">Add Image</button>&nbsp;&nbsp;
+            <button class='btn btn-success' (click)="submit()">Submit</button>
+
+            <div id="selectedImagesArea">
+
+            </div>
+            <br>
+
+        </div>
+
+    </div>
+
+
+</div>
